@@ -6,11 +6,11 @@ stages {
            // withCredentials([string(credentialsId: 'dockerpush', variable: 'password')]) {
                    // sh 'docker login -u akashmukh -p $password'
               
-            withCredentials([usernameColonPassword(credentialsId: 'pushdocker', usernameVariable: 'user' , passwordVariable: 'pass')]) {
+            //withCredentials([usernameColonPassword(credentialsId: 'pushdocker', usernameVariable: 'user' , passwordVariable: 'pass')]) {
                 // some block
               //}       
-               sh 'docker login -u $user -p $pass localhost:8080'
-                     }
+               sh 'sudo docker login -u sayan556 -p Sayanm15@'
+                     //}
              }
         }
    stage('docker pull'){
