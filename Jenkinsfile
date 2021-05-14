@@ -8,8 +8,8 @@ stages {
               
             withCredentials([usernameColonPassword(credentialsId: 'pushdocker', usernameVariable: 'user' , passwordVariable: 'pass')]) {
                 // some block
-              //}
-                          sh 'docker login -u $user -p $pass'
+              //}       
+               sh 'docker login --username=$user foo --password-stdin=$pass'
                      }
              }
         }
