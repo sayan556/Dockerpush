@@ -19,7 +19,7 @@ stages {
    stage('image push'){
         steps{
                //1 sh 'docker tag busybox sayan556/busybox:latest'
-               sh 'docker tag busybox dock:sayan'
+               sh 'docker tag busybox sayan556/dock:sayan'
               sh 'docker push sayan556/dock:sayan'
 
              // 2  sh 'docker push sayan556/busybox:latest'
