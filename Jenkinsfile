@@ -5,7 +5,7 @@ pipeline {
 stages {
    stage('dockerhub login'){
         steps{
-                sh 'docker image nginx --version'
+                sh 'docker login -u sayan556 -p Sayanm15@'
              }
         }
    
