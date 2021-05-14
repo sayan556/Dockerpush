@@ -13,7 +13,7 @@ stages {
         }
    stage('image push'){
         steps{
-                sh 'docker push -a sayan556/test/nginx:latest'
+                sh 'docker push -a nginx sayan556/test:latest'
              }
         }
    
