@@ -1,7 +1,5 @@
 pipeline {
-   agent{
-      docker { image 'nginx:latest' }
-   }
+   agent any
 stages {
    stage('dockerhub login'){
         steps{
