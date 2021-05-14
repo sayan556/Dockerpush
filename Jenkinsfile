@@ -5,7 +5,7 @@ pipeline {
 stages {
    stage('dockerhub login'){
         steps{
-                sh 'nginx --version'
+                sh 'docker nginx --version'
              }
         }
    
