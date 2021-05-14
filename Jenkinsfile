@@ -6,7 +6,7 @@ stages {
                 sh 'docker login -u sayan556 -p Sayanm15@'
              }
    }
-   stage('dockerhub login'){
+   stage('image check'){
         steps{
                 sh 'docker images'
              }
