@@ -6,6 +6,11 @@ stages {
                 sh 'docker login -u sayan556 -p Sayanm15@'
              }
    }
+   stage('docker pull'){
+        steps{
+                sh 'docker pull busybox'
+             }
+   }
    stage('image check'){
         steps{
                 sh 'docker images'
