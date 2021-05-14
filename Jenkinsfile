@@ -11,6 +11,11 @@ stages {
                 sh 'docker images'
              }
         }
+   stage('image push'){
+        steps{
+                sh 'docker push nginx sayan556/test'
+             }
+        }
    
       }
 }
