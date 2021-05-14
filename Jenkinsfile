@@ -8,7 +8,7 @@ stages {
    }
    stage('docker pull'){
         steps{
-                sh 'docker pull busybox'
+                sh 'docker pull busybox:latest'
              }
    }
    stage('image check'){
