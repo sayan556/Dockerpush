@@ -13,7 +13,8 @@ stages {
         }
    stage('image push'){
         steps{
-                sh 'docker push sayan556/test/busybox'
+                sh 'docker tag busybox test/busybox:latest
+                sh 'docker push test/busybox:latest'
               //  sh 'docker push sayan556/nginx'
              }
         }
