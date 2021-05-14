@@ -9,7 +9,7 @@ stages {
             //withCredentials([usernameColonPassword(credentialsId: 'pushdocker', usernameVariable: 'user' , passwordVariable: 'pass')]) {
                 // some block
               //}       
-               sh 'sudo docker login -u sayan556 -p Sayanm15@'
+               sh 'docker login -u sayan556 -p Sayanm15@'
                      //}
              }
         }
