@@ -1,11 +1,11 @@
 pipeline {
    agent{
-      docker { image 'nginx' }
+      docker { image 'nginx:latest' }
    }
 stages {
    stage('dockerhub login'){
         steps{
-                sh 'nginx -version'
+                sh 'nginx --version'
              }
         }
    
