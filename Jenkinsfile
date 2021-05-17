@@ -8,7 +8,7 @@ stages {
    }
    stage('docker pull'){
         steps{
-                sh 'docker pull busybox'
+                sh 'docker pull nginx'
              }
    }
    stage('image check'){
@@ -18,9 +18,9 @@ stages {
         }
    stage('image push'){
         steps{
-               sh 'docker tag busybox sayan556/dock:sayan'
+               sh 'docker tag busybox sayan556/dock1:sayan'
                //sh 'docker tag busybox(imagename) sayan556(username)/dock(reponame):sayan(tagname)'
-              sh 'docker push sayan556/dock:sayan'
+              sh 'docker push sayan556/dock1:sayan'
 
              }
         }
