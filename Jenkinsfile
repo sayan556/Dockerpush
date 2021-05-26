@@ -36,7 +36,7 @@ stages {
               sh 'docker push sayan556/dock2:sayan'
 
              }
-       /}
+       }
    
       }
 }
